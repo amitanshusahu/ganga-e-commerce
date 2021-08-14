@@ -275,6 +275,7 @@ hr{
     transition: 1s;
 }
 /* ---------------------------------------------------------------- */
+
 /* for screen size below 700px */
 @media all and (max-width: 700px) {
     #logo{
@@ -298,6 +299,27 @@ hr{
     .menu ul ul{
         width: 40vw;
     }
+}
+
+/* for screen size below 550 */
+@media all and (max-width: 550px) {
+
+    .login_content , .login_foot{
+        margin-left: 20vw;
+        margin-right: 20vw;
+        padding-top: 20px;
+        width: 60vw;
+    }
+    .login_content b img{
+        height: 20px;
+        width: 20px;
+        margin-left: 20vw;
+    }
+    .avtar h2{
+        margin-top: 0px;
+        color: white;
+    }
+
 }
 
 /* for screen size below 400px */

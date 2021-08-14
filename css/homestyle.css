@@ -273,7 +273,7 @@ body{
 }
 .products_card_l .product_img img{
     padding: 10px;
-    border-radius: 13px;
+    border-radius: 15px;
     padding-top: 0px;
     margin-top: -10px;
 }
@@ -341,6 +341,15 @@ footer{
     text-align: center;
 }
 
+/* for screen size below 910 */
+@media all and (max-width: 910px){
+
+    #maincontent{
+        transform: translateY(-10vh);
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, var(--bgcolor) 0.5%);
+    }    
+
+}
 /* For Screen size below 700px */
 @media all and (max-width: 700px) {
 
@@ -377,4 +386,10 @@ footer{
     margin-top: 0px;
 }
 
+/* for screensize bellow 648 */
+}
+@media all and (max-width: 648px) {
+.multi_product_card{
+    width: 350px; ;
+}
 }
