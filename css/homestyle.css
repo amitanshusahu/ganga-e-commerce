@@ -179,9 +179,6 @@ body{
 .content_box_h::-webkit-scrollbar-button:hover{
     background-color: rgb(165, 165, 165);
 }
-.content_box_h:hover > .content_box_h::-webkit-scrollbar-thumb{
-    display: none;
-}
 .content_box_h h2{
     margin-bottom: 10px;
     position: fixed;
@@ -221,6 +218,101 @@ body{
     width: 100%;
 }
 /* --------------------------------------------------- */
+
+/* large product horizontal container box */
+.content_box_h_l{
+    height: 440px;
+    background-color: white;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.content_box_h_l::-webkit-scrollbar{
+    height: 7px;
+    background-color: white;
+    border-radius: 10px;
+}
+.content_box_h_l::-webkit-scrollbar-thumb{
+    background-color: var(--secondaryTriad);
+    border-radius: 5px;
+}
+.content_box_h_l::-webkit-scrollbar-thumb:hover{
+    background-color: hotpink;
+}
+.content_box_h_l::-webkit-scrollbar-button{
+    background-color: rgb(190, 190, 190);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 20px;
+}
+.content_box_h_l::-webkit-scrollbar-button:hover{
+    background-color: rgb(165, 165, 165);
+}
+.content_box_h_l .heading{
+    position: fixed;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.products_card_l{
+    height: 380px;
+    width: 255px;
+    background-color: white;
+    line-height: 20px;
+    border: 2px solid var(--bordercolor);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.products_card_l .product_img ,.products_card_l .product_img img {
+    height: 280px;
+    width: 240px;
+    margin: auto;
+}
+.products_card_l .product_img img{
+    padding: 10px;
+    border-radius: 13px;
+    padding-top: 0px;
+    margin-top: -10px;
+}
+.products_card_l .product_img i{
+    position: relative;
+    z-index: 100;
+    top: 10px;
+}
+.products_card_l .product_img i img{
+    height: 20px;
+    width: 20px;
+    padding: 0px !important ;
+    float: right;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+.products_card_l .product_img i img:hover{
+   animation: spin 0.3s ease-in-out 1 ;
+}
+@keyframes spin {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    10%{
+        transform: rotateZ(180deg);
+    }
+    30%{
+        transform: rotateZ(270deg);
+    }
+    50%{
+        transform: rotateZ(0deg);
+    }
+}
+.products_card_l .product_details{
+    font-size: 15px;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+/* ------------------------------------------ */
 
 /* footer */
 footer{
