@@ -1,0 +1,2285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/homestyle.css">
+    <script src="js/utilities.js"></script>
+    <title>Ganga - Home</title>
+</head>
+
+<body>
+    <!-- LogIn modal -->
+    <form action="" class="login" id="loginform">
+        <div class="login_container"></div>
+        <div class="avtar">
+            <img src="img/icons/gangalogo.png" alt="Ganga user avtar">
+            <h2>Log In</h2>
+        </div>
+        <div class="login_content">
+            <b style="margin-left:30vw;" onclick="closelogin()" > <img src="img/icons/close.png" alt="X"></b>
+            <ul><input type="text" name="username" placeholder="Email / Phone Number *" required></ul>
+            <ul><input type="password" name="pws" placeholder="Password *" required></ul>
+            <p style="padding-left: 10px;" ><input type="checkbox" name="remember_me" checked>Remember Me</p>
+            <ul class="login_btn_holder"><button id="login_btn">Log In</button></ul>
+        </div>
+        <div class="login_foot">
+            <a href="">Forgot Password?</a>
+            <p>New User?</p>
+            <a href="">Sign Up</a>
+        </div>
+        </div>
+    </form>
+
+    <!-- navigation top -->
+    <div id="NavHolder">
+        <nav>
+
+            <i id="LogoHolder">
+                <!--logo-->     
+                <img id="logo" src="img/icons/gangalogo.png" alt="">
+            </i>
+            <i id="SearchHolder">
+                <input id="search" type="text" placeholder="Search">
+                <img src="https://img.icons8.com/ios-glyphs/24/000000/search--v1.png" />
+            </i>
+
+            <ul>
+                <li><a  onclick="loginnow(1)" style="cursor: pointer;"><img src="img/icons/avtar.png"></a></li>
+                <!--login-->
+                <li><a href=""><img src="img/icons/bell.png" /></a></li>
+                <!--notification-->
+                <li><a href=""><img src="img/icons/gallery.png" /></a></li>
+                <!--collection-->
+                <li><a href=""><img src="img/icons/fast-cart.png" /></a></li>
+                <!--cart-->
+            </ul>
+        </nav>
+    </div>
+    <!-- ---------------------------------------------------------- -->
+    <div>space</div>
+
+    <!-- below navigation, the library navigation -->
+    <div id="BelowNavHolder">
+        <nav>
+
+            <!-- menu button and content goes here  -->
+            <menu class="menu">
+                <ul>
+                    <li><i onclick="menuclicked(1)" class="menuioc"><img id="menuimg"
+                                src="img/icons/icons8-menu.gif"></i>
+                        <!-- side menu on click reveal -->
+                        <ul id="drop">
+
+                            <!-- what's been sold the most -->
+                            <div class="menu_list">
+                                <div class="list_h3">
+                                    <h3 style="padding-top: 10px;">Top Products</h3>
+                                </div>
+                                <div class="list_holder">
+                                    <li class="list">
+                                        <a href="">Gold Hand</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Rupa Chasma</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Etor 67 pro</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Motorola 7g* plus</a>
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- End of What's Trending -->
+                            <hr>
+                            <!-- list 1 -->
+                            <div class="menu_list">
+                                <div class="list_h3">
+                                    <h3>Shop By Department</h3>
+                                </div>
+                                <div class="list_holder">
+                                    <li class="list" id="droplist">
+                                        <a href="">Electronics</a>
+                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <ul>
+                                            <li><a href="">Mobile Asscories</a></li>
+                                            <li><a href="">Loaptop Asscories</a></li>
+                                            <li><a href="">Desktop Asscories</a></li>
+                                            <li><a href="">Circuits</a></li>
+                                            <li><a href="">Apliances</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list" id="droplist">
+                                        <a href="">House Asscories</a>
+                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <ul>
+                                            <li><a href="">Furnitures</a></li>
+                                            <li><a href="">Kitchen Items</a></li>
+                                            <li><a href="">Decor</a></li>
+                                            <li><a href="">Container sets</a></li>
+                                            <li><a href="">Apliances</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Fashion</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Mobiles and Laptops</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Educational</a>
+                                    </li>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- End of list -->
+                            <!-- list 1 -->
+                            <div class="menu_list">
+                                <div class="list_h3">
+                                    <h3>Shop By Department</h3>
+                                </div>
+                                <div class="list_holder">
+                                    <li class="list" id="droplist">
+                                        <a href="">Electronics</a>
+                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <ul>
+                                            <li><a href="">Mobile Asscories</a></li>
+                                            <li><a href="">Loaptop Asscories</a></li>
+                                            <li><a href="">Desktop Asscories</a></li>
+                                            <li><a href="">Circuits</a></li>
+                                            <li><a href="">Apliances</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list" id="droplist">
+                                        <a href="">House Asscories</a>
+                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <ul>
+                                            <li><a href="">Furnitures</a></li>
+                                            <li><a href="">Kitchen Items</a></li>
+                                            <li><a href="">Decor</a></li>
+                                            <li><a href="">Container sets</a></li>
+                                            <li><a href="">Apliances</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Fashion</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Mobiles and Laptops</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Educational</a>
+                                    </li>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- End of list -->
+                            <!-- list 1 -->
+                            <div class="menu_list">
+                                <div class="list_h3">
+                                    <h3>Shop By Department</h3>
+                                </div>
+                                <div class="list_holder">
+                                    <li class="list" id="droplist">
+                                        <a href="">Electronics</a>
+                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <ul>
+                                            <li><a href="">Mobile Asscories</a></li>
+                                            <li><a href="">Loaptop Asscories</a></li>
+                                            <li><a href="">Desktop Asscories</a></li>
+                                            <li><a href="">Circuits</a></li>
+                                            <li><a href="">Apliances</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list" id="droplist">
+                                        <a href="">House Asscories</a>
+                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <ul>
+                                            <li><a href="">Furnitures</a></li>
+                                            <li><a href="">Kitchen Items</a></li>
+                                            <li><a href="">Decor</a></li>
+                                            <li><a href="">Container sets</a></li>
+                                            <li><a href="">Apliances</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Fashion</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Mobiles and Laptops</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Educational</a>
+                                    </li>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- End of list -->
+                            <!-- list 1 -->
+                            <div class="menu_list">
+                                <div class="list_h3">
+                                    <h3>Shop By Department</h3>
+                                </div>
+                                <div class="list_holder">
+                                    <li class="list" id="droplist">
+                                        <a href="">Electronics</a>
+                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <ul>
+                                            <li><a href="">Mobile Asscories</a></li>
+                                            <li><a href="">Loaptop Asscories</a></li>
+                                            <li><a href="">Desktop Asscories</a></li>
+                                            <li><a href="">Circuits</a></li>
+                                            <li><a href="">Apliances</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list" id="droplist">
+                                        <a href="">House Asscories</a>
+                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <ul>
+                                            <li><a href="">Furnitures</a></li>
+                                            <li><a href="">Kitchen Items</a></li>
+                                            <li><a href="">Decor</a></li>
+                                            <li><a href="">Container sets</a></li>
+                                            <li><a href="">Apliances</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Fashion</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Mobiles and Laptops</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Educational</a>
+                                    </li>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- End of list -->
+                            <!-- list 1 -->
+                            <div class="menu_list">
+                                <div class="list_h3">
+                                    <h3>Shop By Department</h3>
+                                </div>
+                                <div class="list_holder">
+                                    <li class="list" id="droplist">
+                                        <a href="">Electronics</a>
+                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <ul>
+                                            <li><a href="">Mobile Asscories</a></li>
+                                            <li><a href="">Loaptop Asscories</a></li>
+                                            <li><a href="">Desktop Asscories</a></li>
+                                            <li><a href="">Circuits</a></li>
+                                            <li><a href="">Apliances</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list" id="droplist">
+                                        <a href="">House Asscories</a>
+                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <ul>
+                                            <li><a href="">Furnitures</a></li>
+                                            <li><a href="">Kitchen Items</a></li>
+                                            <li><a href="">Decor</a></li>
+                                            <li><a href="">Container sets</a></li>
+                                            <li><a href="">Apliances</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Fashion</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Mobiles and Laptops</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Educational</a>
+                                    </li>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- End of list -->
+                            <!-- list 1 -->
+                            <div class="menu_list">
+                                <div class="list_h3">
+                                    <h3>Shop By Department</h3>
+                                </div>
+                                <div class="list_holder">
+                                    <li class="list" id="droplist">
+                                        <a href="">Electronics</a>
+                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <ul>
+                                            <li><a href="">Mobile Asscories</a></li>
+                                            <li><a href="">Loaptop Asscories</a></li>
+                                            <li><a href="">Desktop Asscories</a></li>
+                                            <li><a href="">Circuits</a></li>
+                                            <li><a href="">Apliances</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list" id="droplist">
+                                        <a href="">House Asscories</a>
+                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <ul>
+                                            <li><a href="">Furnitures</a></li>
+                                            <li><a href="">Kitchen Items</a></li>
+                                            <li><a href="">Decor</a></li>
+                                            <li><a href="">Container sets</a></li>
+                                            <li><a href="">Apliances</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Fashion</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Mobiles and Laptops</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Educational</a>
+                                    </li>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- End of list -->
+                            <!-- list 1 -->
+                            <div class="menu_list">
+                                <div class="list_h3">
+                                    <h3>Shop By Department</h3>
+                                </div>
+                                <div class="list_holder">
+                                    <li class="list" id="droplist">
+                                        <a href="">Electronics</a>
+                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <ul>
+                                            <li><a href="">Mobile Asscories</a></li>
+                                            <li><a href="">Loaptop Asscories</a></li>
+                                            <li><a href="">Desktop Asscories</a></li>
+                                            <li><a href="">Circuits</a></li>
+                                            <li><a href="">Apliances</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list" id="droplist">
+                                        <a href="">House Asscories</a>
+                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <ul>
+                                            <li><a href="">Furnitures</a></li>
+                                            <li><a href="">Kitchen Items</a></li>
+                                            <li><a href="">Decor</a></li>
+                                            <li><a href="">Container sets</a></li>
+                                            <li><a href="">Apliances</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Fashion</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Mobiles and Laptops</a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="">Educational</a>
+                                    </li>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- End of list -->
+
+
+                        </ul>
+                        <!-- END of side menu-->
+                    </li>
+                </ul>
+            </menu>
+            <!-- menu button and content ENDs here  -->
+
+            <!-- content dropdown list 1-->
+            <div class="dropdown">
+                <ul>
+                    <li>moblies
+                        <!--catogory-->
+                        <ul>
+                            <!--drop-->
+                            <li class="lastli">things</li>
+                            <li class="lastli">oppo</li>
+                            <li class="lastli">Mi</li>
+                            <li class="lastli">microkey</li>
+                            <li class="lastli">tecno</li>
+                            <li class="lastli">Qi</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- content dropdown list 2-->
+            <div class="dropdown">
+                <ul>
+                    <li>moblies
+                        <!--catogory-->
+                        <ul>
+                            <!--drop-->
+                            <li class="lastli">things</li>
+                            <li class="lastli">oppo</li>
+                            <li class="lastli">Mi</li>
+                            <li class="lastli">microkey</li>
+                            <li class="lastli">tecno</li>
+                            <li class="lastli">Qi</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- content dropdown list 2-->
+            <div class="dropdown">
+                <ul>
+                    <li>moblies
+                        <!--catogory-->
+                        <ul>
+                            <!--drop-->
+                            <li class="lastli">things</li>
+                            <li class="lastli">oppo</li>
+                            <li class="lastli">Mi</li>
+                            <li class="lastli">microkey</li>
+                            <li class="lastli">tecno</li>
+                            <li class="lastli">Qi</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- content dropdown list 3-->
+            <div class="dropdown">
+                <ul>
+                    <li>moblies
+                        <!--catogory-->
+                        <ul>
+                            <!--drop-->
+                            <li class="lastli">things</li>
+                            <li class="lastli">oppo</li>
+                            <li class="lastli">Mi</li>
+                            <li class="lastli">microkey</li>
+                            <li class="lastli">tecno</li>
+                            <li class="lastli">Qi</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- content dropdown list 4-->
+            <div class="dropdown">
+                <ul>
+                    <li>moblies
+                        <!--catogory-->
+                        <ul>
+                            <!--drop-->
+                            <li class="lastli">things</li>
+                            <li class="lastli">oppo</li>
+                            <li class="lastli">Mi</li>
+                            <li class="lastli">microkey</li>
+                            <li class="lastli">tecno</li>
+                            <li class="lastli">Qi</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- content dropdown list last, important inline style-->
+            <div class="dropdown">
+                <ul>
+                    <li style="right: 10px;">moblies
+                        <!--catogory-->
+                        <ul>
+                            <!--drop-->
+                            <li class="lastli">things</li>
+                            <li class="lastli">oppo</li>
+                            <li class="lastli">Mi</li>
+                            <li class="lastli">microkey</li>
+                            <li class="lastli">tecno</li>
+                            <li class="lastli">Qi</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+    <!-- ---------------------------------------------------------------------- -->
+
+    <!-- Header Banner Display SlideShow of offers,updates & fests -->
+    <header>
+        <div class="slideshow" id="stopAutoSlide">
+            <!-- slides, each slide has script -->
+            <div class="theSlides" id="swipeit1"><a href="#"><img class="Simg" src="img/banner/headbanner1.jpg"></a>
+            </div>
+            <div class="theSlides" id="swipeit2"><a href="#"><img class="Simg" src="img/banner/headbanner2.jpg"></a>
+            </div>
+            <div class="theSlides" id="swipeit3"><a href="#"><img class="Simg" src="img/banner/headbanner3.jpg"></a>
+            </div>
+            <div class="theSlides" id="swipeit4"><a href="#"><img class="Simg" src="img/banner/headbanner4.jpg"></a>
+            </div>
+
+            <!-- next and previous buttons -->
+            <a class="prev" id="prevbtn" onclick="goprev(-1)"><img src="img/icons/headerleft.png" alt=""></a>
+            <a class="next" id="nextbtn" onclick="gonext(1)"><img src="img/icons/headerright.png" alt=""></a>
+        </div>
+    </header>
+    <!-- ---------------------------------------------------------------------- -->
+
+    <!-- content -->
+    <main id="maincontent">
+        <div class="margined_content_box">
+
+            <!-- content_card_VERTICAL 8 cards ----------------------------->
+            <div class="content_box_v">
+
+                <!-------------------------- card 1 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Women's Fashion For men</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/mens fasion/product9.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Invisible coat
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/mens fasion/product2.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Hair tape
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/mens fasion/product4.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Buttonless shirt
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/mens fasion/product8.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Brand Less Pant
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+                <!-------------------------- card 1 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Trendig Door Clock|70% off</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/product1.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Goden nail
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/product2.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Bata watch
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/prosuct3.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Blood proof
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/product10.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Paper Boat
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+                <!-------------------------- card 1 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Legendary Rare Items</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/random/products.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Gool Tiffin
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/prosuct3.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Polo set
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/phone/product7.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Earbuds
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/product6.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Cornea Washer
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+                <!-------------------------- card 1 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Student's fest | 99.94% off</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/phone/product5.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Kindel Note 420
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/laptop/product2.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Zisu Re238273
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/gadgets/product9.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Sokla Situ
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/product3.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Note Writer
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+                <!-------------------------- card 1 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Female Fashion | 100% on</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/womens fasion/product5.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Turi Coat
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/womens fasion/product9.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Coloured Dress
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/womens fasion/product4.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Automtic bag
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/womens fasion/product6.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Radium Tooth
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+                <!-------------------------- card 1 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Deals to Shell Yourself</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/homedecor/product8.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Liker Set
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/phone/product6.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Router fan t772
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/mens fasion/product1.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Brain dispatacher
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/laptop/product10.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Nukila 011010
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+                <!-------------------------- card 1 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Invisible Things | Free</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/prosuctw.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    God of Q
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/mens fasion/product5.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Brain's of flat earthers
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/gadgets/product3.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Demons wish
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/random/products sets.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Cows egg
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+                <!-------------------------- card 1 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Liker App Pe Like Kare</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/homedecor/product6.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Eat Meat
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/homedecor/product8.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Errorifer
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/laptop/product7.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Domeroti N37d
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/phone/product6.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Hope 1A
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+
+
+            </div>
+            <!-- ------------------end of the conten card VERTICAL----------- -->
+
+            <!-- ...............content box horizontal......... -->
+            <div class="content_box_h">
+                <!-- heading -->
+                <div>
+                    <h2>Top Mobile Brands</h2>
+                </div>
+                <!-- the product container horizontal -->
+                <ul class="pc_container_m">
+                    <!-- product1 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/phone/product3.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Roto mare 1j <br>
+                                Rs 1M/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 2 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/phone/product 4.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                I phone 9s78 <br>
+                                Rs 0/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 3 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/phone/product5.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Mobigen pad7 <br>
+                                Rs 70/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 4 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/phone/product6.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Hypogutamin 7a <br>
+                                Rs 67/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 5 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/phone/product7.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Gumum M50 <br>
+                                Rs 100/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 6 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/phone/product8.jpg" alt="">
+                            </div>
+                            <div class="product_details">
+                                Holo Note S20 K4 Ultra Max Prime <br>
+                                Rs 22/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 7 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/phone/product 9.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Tole huk1 <br>
+                                u Deside
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/phone/product10.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                ropter zzo <br>
+                                Rs 5508/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/phone/product1.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Hair kjg 87687 <br>
+                                Rs 3834/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/phone/product2.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Yotamax bhatia 8
+                                Rs 9494/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/phone/product5.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Ha-bai <br>
+                                just give something
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- ------------------------END content box horizontal--------------- -->
+
+            <!-- exclusive item banner  -->
+            <div class="exclusive_banner">
+                <a href="">
+                    <img src="img/banner/productbanner.jpg" alt="">
+                </a>
+            </div>
+            <!-- ----------------------- -->
+
+            <!-- 4 4 4 4 content_card_VERTICAL 4cards ----------------------------->
+            <div class="content_box_v">
+
+                <!-------------------------- card 1 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Women's Fashion For men</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/mens fasion/product9.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Invisible coat
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/mens fasion/product2.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Hair tape
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/mens fasion/product4.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Buttonless shirt
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/mens fasion/product8.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Brand Less Pant
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+                <!-------------------------- card 2 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Trendig Door Clock|70% off</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/product1.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Goden nail
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/product2.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Bata watch
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/prosuct3.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Blood proof
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/product10.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Paper Boat
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+                <!-------------------------- card 3 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Legendary Rare Items</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/random/products.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Gool Tiffin
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/prosuct3.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Polo set
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/phone/product7.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Earbuds
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/product6.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Cornea Washer
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+                <!-------------------------- card 4 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Student's fest | 99.94% off</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/phone/product5.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Kindel Note 420
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/laptop/product2.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Zisu Re238273
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/gadgets/product9.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Sokla Situ
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/product3.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Note Writer
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+
+            </div>
+            <!-- ------------------END of the conten card VERTICAL----------- -->
+
+            <!-- ...............content box horizontal......... -->
+            <div class="content_box_h">
+                <!-- heading -->
+                <div>
+                    <h2>Best Selling Top Trending watch</h2>
+                </div>
+                <!-- the product container horizontal -->
+                <ul class="pc_container_m">
+                    <!-- product1 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/watch/product1.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Rupa Fronline <br>
+                                Rs 799/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 2 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/watch/product2.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Dolo Wear <br>
+                                Rs 66/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 3 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/watch/prosuct3.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Hairarcy Disorder <br>
+                                Rs 88/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 4 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/watch/product4.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Yotla Leather Watch <br>
+                                Rs 987/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 5 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/watch/product5.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Plastic Watch <br>
+                                Rs 998/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 6 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/watch/product6.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Hand Woven Watch <br>
+                                Rs 987/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 7 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/watch/product7.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Patanjali Sudh Sona <br>
+                                Rs 98/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/watch/product8.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Sand Made Paris Watch <br>
+                                Rs 778/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/watch/product9.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Hape Watch <br>
+                                Rs 678/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/watch/product10.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                lUxer Watch <br>
+                                Rs 39k/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/watch/product4.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                loter Proof Watch <br>
+                                Rs 389/-
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- ------------------------END content box horizontal--------------- -->
+
+            <!-- ...............content box horizontal......... -->
+            <div class="content_box_h">
+                <!-- heading -->
+                <div>
+                    <h2>Fasion On Trend | Men | Women</h2>
+                </div>
+                <!-- the product container horizontal -->
+                <ul class="pc_container_m">
+                    <!-- product1 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/mens fasion/product3.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                High Priced T-shirt <br>
+                                Rs 99B/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 2 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/mens fasion/product5.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Low Priced shirt <br>
+                                Rs 78/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 3 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/mens fasion/product 7.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                T-shirt Mango Flavour <br>
+                                Rs 798/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 4 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/mens fasion/product6.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Anti-pro Jacket <br>
+                                Rs 678/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 5 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/womens fasion/product3.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Tailor Made Hair Band <br>
+                                Rs 9283/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 6 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/womens fasion/product8.jpg" alt="">
+                            </div>
+                            <div class="product_details">
+                                Broken Sandels <br>
+                                Rs 987/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 7 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/womens fasion/product5.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Kurta Pajama Kala <br>
+                                Rs Peace of mind/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/womens fasion/product2.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Crbon Free Cloth <br>
+                                Rs 389/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/womens fasion/product1.jpg" alt="">
+                            </div>
+                            <div class="product_details">
+                                Hair Band <br>
+                                Rs 3/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/mens fasion/product3.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Tycon Pants <br>
+                                Rs 879/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/mens fasion/product1.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Think Less Sirt <br>
+                                Rs 499/-
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- ------------------------END content box horizontal--------------- -->
+
+            <!-- 4 4 4 4 content_card_vertical fexbox 4cards ----------------------------->
+            <div class="content_box_v">
+
+                <!-------------------------- card 1 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Women's Fashion For men</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/mens fasion/product9.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Invisible coat
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/mens fasion/product2.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Hair tape
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/mens fasion/product4.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Buttonless shirt
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/mens fasion/product8.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Brand Less Pant
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+                <!-------------------------- card 2 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Trendig Door Clock|70% off</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/product1.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Goden nail
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/product2.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Bata watch
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/prosuct3.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Blood proof
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/product10.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Paper Boat
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+                <!-------------------------- card 3 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Legendary Rare Items</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/random/products.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Gool Tiffin
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/prosuct3.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Polo set
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/phone/product7.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Earbuds
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/watch/product6.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Cornea Washer
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+                <!-------------------------- card 4 medium ----------------------->
+                <!-- ............start.............. -->
+                <div class="multi_product_card">
+
+                    <!--product catogory-flexcontsiner1-->
+                    <div class="mpc_h2">
+                        <h2>Student's fest | 99.94% off</h2>
+                    </div>
+
+                    <!-- product container-flexcontent2 -->
+                    <div class="pc_container">
+
+                        <!--product card holder 1-->
+                        <div class="pc_holder">
+
+                            <!-- product card 1 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/phone/product5.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Kindel Note 420
+                                </div>
+                            </a>
+                            <!-- product card 2 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/laptop/product2.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Zisu Re238273
+                                </div>
+                            </a>
+                            <!-- product card 3 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/gadgets/product9.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Sokla Situ
+                                </div>
+                            </a>
+                            <!-- product card 4 -->
+                            <a href="">
+                                <div class="product_img">
+                                    <img src="img/products/product3.jfif" alt="">
+                                </div>
+                                <div class="product_details">
+                                    Note Writer
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- see all-flexcontent3 -->
+                    <div class="view_holder">
+                        <a href="">See all</a>
+                    </div>
+
+                </div>
+                <!-- ..................END of card.................... -->
+
+            </div>
+            <!-- ------------------4444  content card VERTICAL---------- -->
+
+            <!-- ...............content box horizontal......... -->
+            <div class="content_box_h">
+                <!-- heading -->
+                <div>
+                    <h2>Laptop For the Best Price | Buy 1 Get 3 offer</h2>
+                </div>
+                <!-- the product container horizontal -->
+                <ul class="pc_container_m">
+                    <!-- product1 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/laptop/product6.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Hugen t intel 3784 <br>
+                                Rs 3794/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 2 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/laptop/product2.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Lubia 4gb 64gbSSD <br>
+                                Rs 88/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 3 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/laptop/prosuct3.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Tunica intel i5 7th gen 4GB 1THDD <br>
+                                Rs 177/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 4 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/laptop/product 4.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                IUCA 1000gb all <br>
+                                Rs 277/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 5 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/laptop/product9.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Bgiman tu889 <br>
+                                Rs 389/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 6 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/laptop/product 8.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Liker 7687 77gb 78TBHDD <br>
+                                Rs 389/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product 7 -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/laptop/product4.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Tunica Umbel Cord 2 <br>
+                                RS 489498/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/laptop/product1.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Dilo 114 7GB 45HDD <br>
+                                Rs 8473/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/laptop/product5.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                Turbine 298473
+                                Rs 3987/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/laptop/product7.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                eroeirn 39843
+                                Rs 38/-
+                            </div>
+                        </a>
+                    </li>
+                    <!-- product -->
+                    <li class="pc_holder_m">
+                        <a href="">
+                            <div class="product_img">
+                                <img src="img/products/laptop/product2.jfif" alt="">
+                            </div>
+                            <div class="product_details">
+                                HP Hugen pentavalent <br>
+                                Rs 384/-
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- ------------------------END content box horizontal--------------- -->
+
+            <!-- exclusive item banner  -->
+            <div class="exclusive_banner">
+                <a href="">
+                    <img src="img/banner/productbanner2.jpg" alt="">
+                </a>
+            </div>
+            <!-- ----------------------- -->
+
+
+
+        </div>
+    </main>
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- footer with back to top -->
+    <footer id="foot_top">
+        <a href="#"><button style="background-color: var(--basecolor1); border: 0px solid; width: 50vw;"><img
+                    src="img/icons/backtotop.png" alt="" height="15px" width="15px"></button></a>
+    </footer>
+
+    <footer>
+        <div class="info_foot">
+            <ul class="info">
+                <li>hi</li>
+                <li>this</li>
+                <li>that</li>
+                <li>those</li>
+                <li>all</li>
+            </ul>
+            <hr>
+            <ul class="info">
+                <li>hi</li>
+                <li>this</li>
+                <li>that</li>
+                <li>those</li>
+                <li>all</li>
+            </ul>
+            <hr>
+            <ul class="info">
+                <li>hi</li>
+                <li>this</li>
+                <li>that</li>
+                <li>those</li>
+                <li>all</li>
+            </ul>
+            <hr>
+            <ul class="info">
+                <li>hi</li>
+                <li>this</li>
+                <li>that</li>
+                <li>those</li>
+                <li>all</li>
+            </ul>
+        </div>
+        <div class="space" style="padding-top: 15px;"></div>
+        <hr>
+        <div class="disclaimer_foot">
+            <h1>Ganga</h1>
+            <P>thsi is it i have nothing to say about this thing becaude lorem ipsum is not working for some reason and
+                one day this thing will go to the balk hole of paris and then i will go the war of gods ft. Amitanshu
+                Sahu</P>
+        </div>
+    </footer>
+
+    <!-- ----------------------------------------------------------     -->
+    <script>
+        // <<---------for header slideShow------------>>
+
+        var clr;
+        var nextinterval;
+        var previnterval;
+
+        //.......manual........
+        var slideIndex = 1;
+        revealSlides(slideIndex);
+        //invocked by nextbtn
+        function gonext(n) {
+            document.getElementById("swipeit1").style = "animation: next 1s ease 1 ;;";
+            document.getElementById("swipeit2").style = "animation: next 1s ease 1 ;;";
+            document.getElementById("swipeit3").style = "animation: next 1s ease 1 ;;";
+            document.getElementById("swipeit4").style = "animation: next 1s ease 1 ;;";
+            //clears timeout and timeinterva of previnterval(if any) and automatic slideshow
+            clearTimeout(clr)
+            clearInterval(previnterval)
+            //starts automatic slideshow again
+            nextinterval = setInterval(autoshowSlides(), 5000);
+            //calls the function that reveals next slides and make other slides vanish
+            revealSlides(slideIndex += n);
+        }
+        //invocked by prevbtn
+        function goprev(n) {
+            document.getElementById("swipeit1").style = "animation: prev 1s ease 1 ;;";
+            document.getElementById("swipeit2").style = "animation: prev 1s ease 1 ;;";
+            document.getElementById("swipeit3").style = "animation: prev 1s ease 1 ;;";
+            document.getElementById("swipeit4").style = "animation: prev 1s ease 1 ;;";
+            //clears timeout and timeinterva of previnterval(if any) and automatic slideshow
+            clearTimeout(clr)
+            clearInterval(nextinterval)
+            //starts automatic slideshow again
+            previnterval = setInterval(autoshowSlides(), 5000);
+            //calls the function that reveals next slides and make other slides invisible (display: none)
+            revealSlides(slideIndex += n);
+        }
+        // function that reveals next slides (display:block) and make other slides invisible(display: none)
+        function revealSlides(n) {
+            var slides = document.getElementsByClassName("theSlides");
+            if (n > slides.length) {
+                slideIndex = 1
+                console.log("what i n>slidelength does" + slideIndex);
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+                console.log("what if n>1 does" + slideIndex);
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                console.log("in the for loop = " + "i-" + i + "  slide-" + slides + " slides length-" + slides.length + "  index" + slideIndex);
+            }
+            slides[slideIndex - 1].style.display = "block";
+            console.log("in the fun = slide-" + slides + "  slides length-" + slides.length + "  index" + slideIndex);
+        }
+        //.......automatic.........
+        var autoslideIndex = 0;
+        autoshowSlides();
+
+        function autoshowSlides() {
+            var i;
+            var autoslides = document.getElementsByClassName("theSlides");
+            for (i = 0; i < autoslides.length; i++) {
+                autoslides[i].style.display = "none";
+            }
+            autoslideIndex++;
+            if (autoslideIndex > autoslides.length) { autoslideIndex = 1 }
+            autoslides[autoslideIndex - 1].style.display = "block";
+            clr = setTimeout(autoshowSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+
+</html>
