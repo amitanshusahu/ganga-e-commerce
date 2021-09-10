@@ -12,7 +12,7 @@ body{
 /* header slideshow */
 .slideshow{
     position: relative;
-    padding-top: 90px;
+    padding-top: 110px;
     margin: auto;
     z-index: 1; /*less than nav*/
     max-height: auto;
@@ -265,6 +265,8 @@ body{
     border: 2px solid var(--bordercolor);
     border-radius: 10px;
     margin-top: 40px;
+    margin-right: 7px;
+    margin-left: 7px;
 }
 .products_card_l .product_img ,.products_card_l .product_img img {
     height: 280px;
@@ -289,6 +291,7 @@ body{
     float: right;
     margin-right: 10px;
     margin-top: 0px;
+    border-radius: 2px !important;
 }
 .products_card_l .product_img i img:hover{
    animation: spin 0.3s ease-in-out 1 ;
@@ -298,10 +301,10 @@ body{
         transform: rotateZ(0deg);
     }
     10%{
-        transform: rotateZ(180deg);
+        transform: rotateZ(30deg);
     }
     30%{
-        transform: rotateZ(270deg);
+        transform: rotateZ(-20deg);
     }
     50%{
         transform: rotateZ(0deg);
@@ -314,33 +317,6 @@ body{
 }
 /* ------------------------------------------ */
 
-/* footer */
-footer{
-    background-color:white;
-    margin-top: -160px;
-}
-#foot_top{
-    position: absolute;
-    background-color: var(--basecolor1);
-    width: 100%;
-    text-align: center;
-    z-index: 1000;
-}
-.info_foot{
-    height: 150px;
-    width: 100%!important;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 30px;
-}
-.info_foot ul{
-    display: inline;
-    list-style: none;
-}
-.disclaimer_foot{
-    text-align: center;
-}
-
 /* for screen size below 910 */
 @media all and (max-width: 910px){
 
@@ -350,6 +326,7 @@ footer{
     }    
 
 }
+
 /* For Screen size below 700px */
 @media all and (max-width: 700px) {
 
@@ -381,9 +358,6 @@ footer{
 .next{
     text-align: right;
 
-}
-footer{
-    margin-top: 0px;
 }
 
 /* for screensize bellow 648 */

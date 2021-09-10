@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/homestyle.css">
-    <script src="js/utilities.js"></script>
+    <link rel="stylesheet" href="../css/homestyle.css">
+    <script src="../js/utilities.js"></script>
     <title>Ganga - Home</title>
 </head>
 
@@ -15,11 +15,11 @@
     <form action="" class="login" id="loginform">
         <div class="login_container"></div>
         <div class="avtar">
-            <img src="img/icons/gangalogo.png" alt="Ganga user avtar">
+            <img src="../img/icons/gangalogo.png" alt="Ganga user avtar">
             <h2>Log In</h2>
         </div>
         <div class="login_content">
-            <b style="margin-left:30vw;" onclick="closelogin()" > <img src="img/icons/close.png" alt="X"></b>
+            <b style="margin-left:30vw;" onclick="closelogin()" > <img src="../img/icons/close.png" alt="X"></b>
             <ul><input type="text" name="username" placeholder="Email / Phone Number *" required></ul>
             <ul><input type="password" name="pws" placeholder="Password *" required></ul>
             <p style="padding-left: 10px;" ><input type="checkbox" name="remember_me" checked>Remember Me</p>
@@ -33,13 +33,49 @@
         </div>
     </form>
 
+    <!-- Notification Modal -->
+    <div class="notif_container" id="notification">
+        <div class="notif_heading">
+            <h2>Notification</h2>
+        </div>
+        <div class="notif_content">
+            <li>This is a Notification</li>
+            <li>Your order has been placed</li>
+            <li>You will get your order after two years</li>
+            <li>A killer is trying to kill you</li>
+            <li>Die before i die</li>
+            <li>Do or die and then forget everything</li>
+            <li>why should you not do that</li>
+            <li>Be what everyone want you to be like Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam deserunt eos dolores! Praesentium eos, aliquid facere veniam velit amet aspernatur.</li>
+        </div>
+        <script>
+                //  for navigation box , NOT WORKING IN THE EXTERNAL BUT WORKING IN THE INTERNAL
+     var notificationClickNo = 1;
+     notification(notificationClickNo)
+
+     function openNotification(o){
+         notification(notificationClickNo += o)
+     }
+
+     function notification(o){
+        if(o%2==0){
+            document.getElementById("notification").style=" transform: translateY(0%);"
+        }
+        else{
+            document.getElementById("notification").style="transform: translateY(-100%) "
+        }
+     }
+    //  <<---------------------------------------->
+        </script>
+    </div>
+
     <!-- navigation top -->
     <div id="NavHolder">
         <nav>
 
             <i id="LogoHolder">
                 <!--logo-->     
-                <img id="logo" src="img/icons/gangalogo.png" alt="">
+                <a href="../html/index.html" ><img id="logo" src="../img/icons/gangalogo.png" alt=""></a>
             </i>
             <i id="SearchHolder">
                 <input id="search" type="text" placeholder="Search">
@@ -47,19 +83,19 @@
             </i>
 
             <ul>
-                <li><a  onclick="loginnow(1)" style="cursor: pointer;"><img src="img/icons/avtar.png"></a></li>
+                <li><a  onclick="loginnow(1)" style="cursor: pointer;"><img src="../img/icons/avtar.png"></a></li>
                 <!--login-->
-                <li><a href=""><img src="img/icons/bell.png" /></a></li>
+                <li><a onclick="openNotification(1)"style="cursor: pointer;" ><img src="../img/icons/bell.png" /></a></li>
                 <!--notification-->
-                <li><a href=""><img src="img/icons/gallery.png" /></a></li>
+                <li><a href="../html/collection..html"><img src="../img/icons/gallery.png" /></a></li>
                 <!--collection-->
-                <li><a href=""><img src="img/icons/fast-cart.png" /></a></li>
+                <li><a href="../html/cart.html"><img src="../img/icons/fast-cart.png" /></a></li>
                 <!--cart-->
             </ul>
         </nav>
     </div>
     <!-- ---------------------------------------------------------- -->
-    <div>space</div>
+    <!-- <div>space</div> -->
 
     <!-- below navigation, the library navigation -->
     <div id="BelowNavHolder">
@@ -69,7 +105,7 @@
             <menu class="menu">
                 <ul>
                     <li><i onclick="menuclicked(1)" class="menuioc"><img id="menuimg"
-                                src="img/icons/icons8-menu.gif"></i>
+                                src="../img/icons/icons8-menu.gif"></i>
                         <!-- side menu on click reveal -->
                         <ul id="drop">
 
@@ -103,7 +139,7 @@
                                 <div class="list_holder">
                                     <li class="list" id="droplist">
                                         <a href="">Electronics</a>
-                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <i><img src="../img/icons/dropright.png" alt=""></i>
                                         <ul>
                                             <li><a href="">Mobile Asscories</a></li>
                                             <li><a href="">Loaptop Asscories</a></li>
@@ -114,7 +150,7 @@
                                     </li>
                                     <li class="list" id="droplist">
                                         <a href="">House Asscories</a>
-                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <i><img src="../img/icons/dropright.png" alt=""></i>
                                         <ul>
                                             <li><a href="">Furnitures</a></li>
                                             <li><a href="">Kitchen Items</a></li>
@@ -144,7 +180,7 @@
                                 <div class="list_holder">
                                     <li class="list" id="droplist">
                                         <a href="">Electronics</a>
-                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <i><img src="../img/icons/dropright.png" alt=""></i>
                                         <ul>
                                             <li><a href="">Mobile Asscories</a></li>
                                             <li><a href="">Loaptop Asscories</a></li>
@@ -155,7 +191,7 @@
                                     </li>
                                     <li class="list" id="droplist">
                                         <a href="">House Asscories</a>
-                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <i><img src="../img/icons/dropright.png" alt=""></i>
                                         <ul>
                                             <li><a href="">Furnitures</a></li>
                                             <li><a href="">Kitchen Items</a></li>
@@ -185,7 +221,7 @@
                                 <div class="list_holder">
                                     <li class="list" id="droplist">
                                         <a href="">Electronics</a>
-                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <i><img src="../img/icons/dropright.png" alt=""></i>
                                         <ul>
                                             <li><a href="">Mobile Asscories</a></li>
                                             <li><a href="">Loaptop Asscories</a></li>
@@ -196,7 +232,7 @@
                                     </li>
                                     <li class="list" id="droplist">
                                         <a href="">House Asscories</a>
-                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <i><img src="../img/icons/dropright.png" alt=""></i>
                                         <ul>
                                             <li><a href="">Furnitures</a></li>
                                             <li><a href="">Kitchen Items</a></li>
@@ -226,7 +262,7 @@
                                 <div class="list_holder">
                                     <li class="list" id="droplist">
                                         <a href="">Electronics</a>
-                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <i><img src="../img/icons/dropright.png" alt=""></i>
                                         <ul>
                                             <li><a href="">Mobile Asscories</a></li>
                                             <li><a href="">Loaptop Asscories</a></li>
@@ -237,7 +273,7 @@
                                     </li>
                                     <li class="list" id="droplist">
                                         <a href="">House Asscories</a>
-                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <i><img src="../img/icons/dropright.png" alt=""></i>
                                         <ul>
                                             <li><a href="">Furnitures</a></li>
                                             <li><a href="">Kitchen Items</a></li>
@@ -267,7 +303,7 @@
                                 <div class="list_holder">
                                     <li class="list" id="droplist">
                                         <a href="">Electronics</a>
-                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <i><img src="../img/icons/dropright.png" alt=""></i>
                                         <ul>
                                             <li><a href="">Mobile Asscories</a></li>
                                             <li><a href="">Loaptop Asscories</a></li>
@@ -278,7 +314,7 @@
                                     </li>
                                     <li class="list" id="droplist">
                                         <a href="">House Asscories</a>
-                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <i><img src="../img/icons/dropright.png" alt=""></i>
                                         <ul>
                                             <li><a href="">Furnitures</a></li>
                                             <li><a href="">Kitchen Items</a></li>
@@ -308,7 +344,7 @@
                                 <div class="list_holder">
                                     <li class="list" id="droplist">
                                         <a href="">Electronics</a>
-                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <i><img src="../img/icons/dropright.png" alt=""></i>
                                         <ul>
                                             <li><a href="">Mobile Asscories</a></li>
                                             <li><a href="">Loaptop Asscories</a></li>
@@ -319,7 +355,7 @@
                                     </li>
                                     <li class="list" id="droplist">
                                         <a href="">House Asscories</a>
-                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <i><img src="../img/icons/dropright.png" alt=""></i>
                                         <ul>
                                             <li><a href="">Furnitures</a></li>
                                             <li><a href="">Kitchen Items</a></li>
@@ -349,7 +385,7 @@
                                 <div class="list_holder">
                                     <li class="list" id="droplist">
                                         <a href="">Electronics</a>
-                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <i><img src="../img/icons/dropright.png" alt=""></i>
                                         <ul>
                                             <li><a href="">Mobile Asscories</a></li>
                                             <li><a href="">Loaptop Asscories</a></li>
@@ -360,7 +396,7 @@
                                     </li>
                                     <li class="list" id="droplist">
                                         <a href="">House Asscories</a>
-                                        <i><img src="img/icons/dropright.png" alt=""></i>
+                                        <i><img src="../img/icons/dropright.png" alt=""></i>
                                         <ul>
                                             <li><a href="">Furnitures</a></li>
                                             <li><a href="">Kitchen Items</a></li>
@@ -502,18 +538,18 @@
     <header>
         <div class="slideshow" id="stopAutoSlide">
             <!-- slides, each slide has script -->
-            <div class="theSlides" id="swipeit1"><a href="#"><img class="Simg" src="img/banner/headbanner1.jpg"></a>
+            <div class="theSlides" id="swipeit1"><a href="#"><img class="Simg" src="../img/banner/headbanner1.jpg"></a>
             </div>
-            <div class="theSlides" id="swipeit2"><a href="#"><img class="Simg" src="img/banner/headbanner2.jpg"></a>
+            <div class="theSlides" id="swipeit2"><a href="#"><img class="Simg" src="../img/banner/headbanner2.jpg"></a>
             </div>
-            <div class="theSlides" id="swipeit3"><a href="#"><img class="Simg" src="img/banner/headbanner3.jpg"></a>
+            <div class="theSlides" id="swipeit3"><a href="#"><img class="Simg" src="../img/banner/headbanner3.jpg"></a>
             </div>
-            <div class="theSlides" id="swipeit4"><a href="#"><img class="Simg" src="img/banner/headbanner4.jpg"></a>
+            <div class="theSlides" id="swipeit4"><a href="#"><img class="Simg" src="../img/banner/headbanner4.jpg"></a>
             </div>
 
             <!-- next and previous buttons -->
-            <a class="prev" id="prevbtn" onclick="goprev(-1)"><img src="img/icons/headerleft.png" alt=""></a>
-            <a class="next" id="nextbtn" onclick="gonext(1)"><img src="img/icons/headerright.png" alt=""></a>
+            <a class="prev" id="prevbtn" onclick="goprev(-1)"><img src="../img/icons/headerleft.png" alt=""></a>
+            <a class="next" id="nextbtn" onclick="gonext(1)"><img src="../img/icons/headerright.png" alt=""></a>
         </div>
     </header>
     <!-- ---------------------------------------------------------------------- -->
@@ -543,7 +579,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/mens fasion/product9.jfif" alt="">
+                                    <img src="../img/products/mens fasion/product9.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Invisible coat
@@ -552,7 +588,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/mens fasion/product2.jfif" alt="">
+                                    <img src="../img/products/mens fasion/product2.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Hair tape
@@ -561,7 +597,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/mens fasion/product4.jfif" alt="">
+                                    <img src="../img/products/mens fasion/product4.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Buttonless shirt
@@ -570,7 +606,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/mens fasion/product8.jfif" alt="">
+                                    <img src="../img/products/mens fasion/product8.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Brand Less Pant
@@ -606,7 +642,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/product1.jfif" alt="">
+                                    <img src="../img/products/watch/product1.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Goden nail
@@ -615,7 +651,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/product2.jfif" alt="">
+                                    <img src="../img/products/watch/product2.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Bata watch
@@ -624,7 +660,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/prosuct3.jfif" alt="">
+                                    <img src="../img/products/watch/prosuct3.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Blood proof
@@ -633,7 +669,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/product10.jfif" alt="">
+                                    <img src="../img/products/watch/product10.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Paper Boat
@@ -669,7 +705,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/random/products.jfif" alt="">
+                                    <img src="../img/products/random/products.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Gool Tiffin
@@ -678,7 +714,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/prosuct3.jfif" alt="">
+                                    <img src="../img/products/prosuct3.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Polo set
@@ -687,7 +723,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/phone/product7.jfif" alt="">
+                                    <img src="../img/products/phone/product7.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Earbuds
@@ -696,7 +732,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/product6.jfif" alt="">
+                                    <img src="../img/products/watch/product6.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Cornea Washer
@@ -732,7 +768,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/phone/product5.jfif" alt="">
+                                    <img src="../img/products/phone/product5.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Kindel Note 420
@@ -741,7 +777,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/laptop/product2.jfif" alt="">
+                                    <img src="../img/products/laptop/product2.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Zisu Re238273
@@ -750,7 +786,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/gadgets/product9.jfif" alt="">
+                                    <img src="../img/products/gadgets/product9.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Sokla Situ
@@ -759,7 +795,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/product3.jfif" alt="">
+                                    <img src="../img/products/product3.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Note Writer
@@ -795,7 +831,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/womens fasion/product5.jfif" alt="">
+                                    <img src="../img/products/womens fasion/product5.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Turi Coat
@@ -804,7 +840,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/womens fasion/product9.jfif" alt="">
+                                    <img src="../img/products/womens fasion/product9.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Coloured Dress
@@ -813,7 +849,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/womens fasion/product4.jfif" alt="">
+                                    <img src="../img/products/womens fasion/product4.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Automtic bag
@@ -822,7 +858,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/womens fasion/product6.jfif" alt="">
+                                    <img src="../img/products/womens fasion/product6.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Radium Tooth
@@ -858,7 +894,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/homedecor/product8.jfif" alt="">
+                                    <img src="../img/products/homedecor/product8.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Liker Set
@@ -867,7 +903,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/phone/product6.jfif" alt="">
+                                    <img src="../img/products/phone/product6.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Router fan t772
@@ -876,7 +912,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/mens fasion/product1.jfif" alt="">
+                                    <img src="../img/products/mens fasion/product1.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Brain dispatacher
@@ -885,7 +921,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/laptop/product10.jfif" alt="">
+                                    <img src="../img/products/laptop/product10.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Nukila 011010
@@ -921,7 +957,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/prosuctw.jfif" alt="">
+                                    <img src="../img/products/prosuctw.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     God of Q
@@ -930,7 +966,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/mens fasion/product5.jfif" alt="">
+                                    <img src="../img/products/mens fasion/product5.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Brain's of flat earthers
@@ -939,7 +975,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/gadgets/product3.jfif" alt="">
+                                    <img src="../img/products/gadgets/product3.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Demons wish
@@ -948,7 +984,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/random/products sets.jfif" alt="">
+                                    <img src="../img/products/random/products sets.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Cows egg
@@ -984,7 +1020,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/homedecor/product6.jfif" alt="">
+                                    <img src="../img/products/homedecor/product6.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Eat Meat
@@ -993,7 +1029,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/homedecor/product8.jfif" alt="">
+                                    <img src="../img/products/homedecor/product8.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Errorifer
@@ -1002,7 +1038,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/laptop/product7.jfif" alt="">
+                                    <img src="../img/products/laptop/product7.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Domeroti N37d
@@ -1011,7 +1047,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/phone/product6.jfif" alt="">
+                                    <img src="../img/products/phone/product6.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Hope 1A
@@ -1046,7 +1082,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/phone/product3.jfif" alt="">
+                                <img src="../img/products/phone/product3.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Roto mare 1j <br>
@@ -1058,7 +1094,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/phone/product 4.jfif" alt="">
+                                <img src="../img/products/phone/product 4.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 I phone 9s78 <br>
@@ -1070,7 +1106,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/phone/product5.jfif" alt="">
+                                <img src="../img/products/phone/product5.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Mobigen pad7 <br>
@@ -1082,7 +1118,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/phone/product6.jfif" alt="">
+                                <img src="../img/products/phone/product6.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Hypogutamin 7a <br>
@@ -1094,7 +1130,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/phone/product7.jfif" alt="">
+                                <img src="../img/products/phone/product7.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Gumum M50 <br>
@@ -1106,7 +1142,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/phone/product8.jpg" alt="">
+                                <img src="../img/products/phone/product8.jpg" alt="">
                             </div>
                             <div class="product_details">
                                 Holo Note S20 K4 Ultra Max Prime <br>
@@ -1118,7 +1154,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/phone/product 9.jfif" alt="">
+                                <img src="../img/products/phone/product 9.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Tole huk1 <br>
@@ -1130,7 +1166,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/phone/product10.jfif" alt="">
+                                <img src="../img/products/phone/product10.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 ropter zzo <br>
@@ -1142,7 +1178,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/phone/product1.jfif" alt="">
+                                <img src="../img/products/phone/product1.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Hair kjg 87687 <br>
@@ -1154,7 +1190,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/phone/product2.jfif" alt="">
+                                <img src="../img/products/phone/product2.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Yotamax bhatia 8
@@ -1166,7 +1202,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/phone/product5.jfif" alt="">
+                                <img src="../img/products/phone/product5.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Ha-bai <br>
@@ -1183,7 +1219,7 @@
             <!-- exclusive item banner  -->
             <div class="exclusive_banner">
                 <a href="">
-                    <img src="img/banner/productbanner.jpg" alt="">
+                    <img src="../img/banner/productbanner.jpg" alt="">
                 </a>
             </div>
             <!-- ----------------------- -->
@@ -1209,7 +1245,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/mens fasion/product9.jfif" alt="">
+                                    <img src="../img/products/mens fasion/product9.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Invisible coat
@@ -1218,7 +1254,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/mens fasion/product2.jfif" alt="">
+                                    <img src="../img/products/mens fasion/product2.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Hair tape
@@ -1227,7 +1263,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/mens fasion/product4.jfif" alt="">
+                                    <img src="../img/products/mens fasion/product4.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Buttonless shirt
@@ -1236,7 +1272,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/mens fasion/product8.jfif" alt="">
+                                    <img src="../img/products/mens fasion/product8.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Brand Less Pant
@@ -1272,7 +1308,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/product1.jfif" alt="">
+                                    <img src="../img/products/watch/product1.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Goden nail
@@ -1281,7 +1317,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/product2.jfif" alt="">
+                                    <img src="../img/products/watch/product2.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Bata watch
@@ -1290,7 +1326,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/prosuct3.jfif" alt="">
+                                    <img src="../img/products/watch/prosuct3.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Blood proof
@@ -1299,7 +1335,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/product10.jfif" alt="">
+                                    <img src="../img/products/watch/product10.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Paper Boat
@@ -1335,7 +1371,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/random/products.jfif" alt="">
+                                    <img src="../img/products/random/products.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Gool Tiffin
@@ -1344,7 +1380,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/prosuct3.jfif" alt="">
+                                    <img src="../img/products/prosuct3.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Polo set
@@ -1353,7 +1389,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/phone/product7.jfif" alt="">
+                                    <img src="../img/products/phone/product7.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Earbuds
@@ -1362,7 +1398,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/product6.jfif" alt="">
+                                    <img src="../img/products/watch/product6.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Cornea Washer
@@ -1398,7 +1434,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/phone/product5.jfif" alt="">
+                                    <img src="../img/products/phone/product5.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Kindel Note 420
@@ -1407,7 +1443,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/laptop/product2.jfif" alt="">
+                                    <img src="../img/products/laptop/product2.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Zisu Re238273
@@ -1416,7 +1452,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/gadgets/product9.jfif" alt="">
+                                    <img src="../img/products/gadgets/product9.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Sokla Situ
@@ -1425,7 +1461,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/product3.jfif" alt="">
+                                    <img src="../img/products/product3.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Note Writer
@@ -1459,7 +1495,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/watch/product1.jfif" alt="">
+                                <img src="../img/products/watch/product1.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Rupa Fronline <br>
@@ -1471,7 +1507,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/watch/product2.jfif" alt="">
+                                <img src="../img/products/watch/product2.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Dolo Wear <br>
@@ -1483,7 +1519,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/watch/prosuct3.jfif" alt="">
+                                <img src="../img/products/watch/prosuct3.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Hairarcy Disorder <br>
@@ -1495,7 +1531,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/watch/product4.jfif" alt="">
+                                <img src="../img/products/watch/product4.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Yotla Leather Watch <br>
@@ -1507,7 +1543,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/watch/product5.jfif" alt="">
+                                <img src="../img/products/watch/product5.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Plastic Watch <br>
@@ -1519,7 +1555,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/watch/product6.jfif" alt="">
+                                <img src="../img/products/watch/product6.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Hand Woven Watch <br>
@@ -1531,7 +1567,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/watch/product7.jfif" alt="">
+                                <img src="../img/products/watch/product7.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Patanjali Sudh Sona <br>
@@ -1543,7 +1579,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/watch/product8.jfif" alt="">
+                                <img src="../img/products/watch/product8.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Sand Made Paris Watch <br>
@@ -1555,7 +1591,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/watch/product9.jfif" alt="">
+                                <img src="../img/products/watch/product9.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Hape Watch <br>
@@ -1567,7 +1603,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/watch/product10.jfif" alt="">
+                                <img src="../img/products/watch/product10.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 lUxer Watch <br>
@@ -1579,7 +1615,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/watch/product4.jfif" alt="">
+                                <img src="../img/products/watch/product4.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 loter Proof Watch <br>
@@ -1605,7 +1641,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/mens fasion/product3.jfif" alt="">
+                                <img src="../img/products/mens fasion/product3.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 High Priced T-shirt <br>
@@ -1617,7 +1653,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/mens fasion/product5.jfif" alt="">
+                                <img src="../img/products/mens fasion/product5.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Low Priced shirt <br>
@@ -1629,7 +1665,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/mens fasion/product 7.jfif" alt="">
+                                <img src="../img/products/mens fasion/product 7.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 T-shirt Mango Flavour <br>
@@ -1641,7 +1677,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/mens fasion/product6.jfif" alt="">
+                                <img src="../img/products/mens fasion/product6.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Anti-pro Jacket <br>
@@ -1653,7 +1689,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/womens fasion/product3.jfif" alt="">
+                                <img src="../img/products/womens fasion/product3.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Tailor Made Hair Band <br>
@@ -1665,7 +1701,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/womens fasion/product8.jpg" alt="">
+                                <img src="../img/products/womens fasion/product8.jpg" alt="">
                             </div>
                             <div class="product_details">
                                 Broken Sandels <br>
@@ -1677,7 +1713,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/womens fasion/product5.jfif" alt="">
+                                <img src="../img/products/womens fasion/product5.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Kurta Pajama Kala <br>
@@ -1689,7 +1725,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/womens fasion/product2.jfif" alt="">
+                                <img src="../img/products/womens fasion/product2.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Crbon Free Cloth <br>
@@ -1701,7 +1737,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/womens fasion/product1.jpg" alt="">
+                                <img src="../img/products/womens fasion/product1.jpg" alt="">
                             </div>
                             <div class="product_details">
                                 Hair Band <br>
@@ -1713,7 +1749,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/mens fasion/product3.jfif" alt="">
+                                <img src="../img/products/mens fasion/product3.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Tycon Pants <br>
@@ -1725,7 +1761,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/mens fasion/product1.jfif" alt="">
+                                <img src="../img/products/mens fasion/product1.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Think Less Sirt <br>
@@ -1760,7 +1796,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/mens fasion/product9.jfif" alt="">
+                                    <img src="../img/products/mens fasion/product9.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Invisible coat
@@ -1769,7 +1805,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/mens fasion/product2.jfif" alt="">
+                                    <img src="../img/products/mens fasion/product2.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Hair tape
@@ -1778,7 +1814,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/mens fasion/product4.jfif" alt="">
+                                    <img src="../img/products/mens fasion/product4.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Buttonless shirt
@@ -1787,7 +1823,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/mens fasion/product8.jfif" alt="">
+                                    <img src="../img/products/mens fasion/product8.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Brand Less Pant
@@ -1823,7 +1859,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/product1.jfif" alt="">
+                                    <img src="../img/products/watch/product1.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Goden nail
@@ -1832,7 +1868,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/product2.jfif" alt="">
+                                    <img src="../img/products/watch/product2.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Bata watch
@@ -1841,7 +1877,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/prosuct3.jfif" alt="">
+                                    <img src="../img/products/watch/prosuct3.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Blood proof
@@ -1850,7 +1886,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/product10.jfif" alt="">
+                                    <img src="../img/products/watch/product10.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Paper Boat
@@ -1886,7 +1922,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/random/products.jfif" alt="">
+                                    <img src="../img/products/random/products.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Gool Tiffin
@@ -1895,7 +1931,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/prosuct3.jfif" alt="">
+                                    <img src="../img/products/prosuct3.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Polo set
@@ -1904,7 +1940,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/phone/product7.jfif" alt="">
+                                    <img src="../img/products/phone/product7.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Earbuds
@@ -1913,7 +1949,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/watch/product6.jfif" alt="">
+                                    <img src="../img/products/watch/product6.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Cornea Washer
@@ -1949,7 +1985,7 @@
                             <!-- product card 1 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/phone/product5.jfif" alt="">
+                                    <img src="../img/products/phone/product5.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Kindel Note 420
@@ -1958,7 +1994,7 @@
                             <!-- product card 2 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/laptop/product2.jfif" alt="">
+                                    <img src="../img/products/laptop/product2.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Zisu Re238273
@@ -1967,7 +2003,7 @@
                             <!-- product card 3 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/gadgets/product9.jfif" alt="">
+                                    <img src="../img/products/gadgets/product9.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Sokla Situ
@@ -1976,7 +2012,7 @@
                             <!-- product card 4 -->
                             <a href="">
                                 <div class="product_img">
-                                    <img src="img/products/product3.jfif" alt="">
+                                    <img src="../img/products/product3.jfif" alt="">
                                 </div>
                                 <div class="product_details">
                                     Note Writer
@@ -2010,7 +2046,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/laptop/product6.jfif" alt="">
+                                <img src="../img/products/laptop/product6.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Hugen t intel 3784 <br>
@@ -2022,7 +2058,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/laptop/product2.jfif" alt="">
+                                <img src="../img/products/laptop/product2.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Lubia 4gb 64gbSSD <br>
@@ -2034,7 +2070,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/laptop/prosuct3.jfif" alt="">
+                                <img src="../img/products/laptop/prosuct3.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Tunica intel i5 7th gen 4GB 1THDD <br>
@@ -2046,7 +2082,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/laptop/product 4.jfif" alt="">
+                                <img src="../img/products/laptop/product 4.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 IUCA 1000gb all <br>
@@ -2058,7 +2094,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/laptop/product9.jfif" alt="">
+                                <img src="../img/products/laptop/product9.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Bgiman tu889 <br>
@@ -2070,7 +2106,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/laptop/product 8.jfif" alt="">
+                                <img src="../img/products/laptop/product 8.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Liker 7687 77gb 78TBHDD <br>
@@ -2082,7 +2118,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/laptop/product4.jfif" alt="">
+                                <img src="../img/products/laptop/product4.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Tunica Umbel Cord 2 <br>
@@ -2094,7 +2130,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/laptop/product1.jfif" alt="">
+                                <img src="../img/products/laptop/product1.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Dilo 114 7GB 45HDD <br>
@@ -2106,7 +2142,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/laptop/product5.jfif" alt="">
+                                <img src="../img/products/laptop/product5.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 Turbine 298473
@@ -2118,7 +2154,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/laptop/product7.jfif" alt="">
+                                <img src="../img/products/laptop/product7.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 eroeirn 39843
@@ -2130,7 +2166,7 @@
                     <li class="pc_holder_m">
                         <a href="">
                             <div class="product_img">
-                                <img src="img/products/laptop/product2.jfif" alt="">
+                                <img src="../img/products/laptop/product2.jfif" alt="">
                             </div>
                             <div class="product_details">
                                 HP Hugen pentavalent <br>
@@ -2147,7 +2183,7 @@
             <!-- exclusive item banner  -->
             <div class="exclusive_banner">
                 <a href="">
-                    <img src="img/banner/productbanner2.jpg" alt="">
+                    <img src="../img/banner/productbanner2.jpg" alt="">
                 </a>
             </div>
             <!-- ----------------------- -->
@@ -2164,9 +2200,9 @@
                 <div class="products_card_l">
                     <a href="">
                         <div class="product_img">
-                            <i><img src="img/icons/gallery.png" alt=""></i>
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
                             <!-- product img                             -->
-                            <img src="img/products/trending/Product1.jfif">
+                            <img src="../img/products/trending/Product1.jfif">
                         </div>
                         <div class="product_details">
                             <div class="text" >
@@ -2187,9 +2223,9 @@
                 <div class="products_card_l">
                     <a href="">
                         <div class="product_img">
-                            <i><img src="img/icons/gallery.png" alt=""></i>
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
                             <!-- product img -->
-                            <img src="img/products/trending/product2.jpg">
+                            <img src="../img/products/trending/product2.jpg">
                         </div>
                         <div class="product_details">
                             <div class="text" >
@@ -2210,9 +2246,9 @@
                 <div class="products_card_l">
                     <a href="">
                         <div class="product_img">
-                            <i><img src="img/icons/gallery.png" alt=""></i>
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
                             <!-- product img -->
-                            <img src="img/products/trending/product3.jpg">
+                            <img src="../img/products/trending/product3.jpg">
                         </div>
                         <div class="product_details">
                             <div class="text" >
@@ -2233,9 +2269,9 @@
                 <div class="products_card_l">
                     <a href="">
                         <div class="product_img">
-                            <i><img src="img/icons/gallery.png" alt=""></i>
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
                             <!-- product image -->
-                            <img src="img/products/trending/product 4.jfif">
+                            <img src="../img/products/trending/product 4.jfif">
                         </div>
                         <div class="product_details">
                             <div class="text" >
@@ -2256,9 +2292,9 @@
                 <div class="products_card_l">
                     <a href="">
                         <div class="product_img">
-                            <i><img src="img/icons/gallery.png" alt=""></i>
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
                             <!-- products imag -->
-                            <img src="img/products/trending/product5.jfif">
+                            <img src="../img/products/trending/product5.jfif">
                         </div>
                         <div class="product_details">
                             <div class="text" >
@@ -2279,9 +2315,9 @@
                 <div class="products_card_l">
                     <a href="">
                         <div class="product_img">
-                            <i><img src="img/icons/gallery.png" alt=""></i>
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
                             <!-- products img -->
-                            <img src="img/products/trending/product5.jpeg">
+                            <img src="../img/products/trending/product5.jpeg">
                         </div>
                         <div class="product_details">
                             <div class="text" >
@@ -2302,9 +2338,9 @@
                 <div class="products_card_l">
                     <a href="">
                         <div class="product_img">
-                            <i><img src="img/icons/gallery.png" alt=""></i>
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
                             <!-- products img  -->
-                            <img src="img/products/trending/product6.jfif">
+                            <img src="../img/products/trending/product6.jfif">
                         </div>
                         <div class="product_details">
                             <div class="text" >
@@ -2325,9 +2361,9 @@
                 <div class="products_card_l">
                     <a href="">
                         <div class="product_img">
-                            <i><img src="img/icons/gallery.png" alt=""></i>
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
                             <!-- products img  -->
-                            <img src="img/products/trending/product7.jfif">
+                            <img src="../img/products/trending/product7.jfif">
                         </div>
                         <div class="product_details">
                             <div class="text" >
@@ -2348,9 +2384,9 @@
                 <div class="products_card_l">
                     <a href="">
                         <div class="product_img">
-                            <i><img src="img/icons/gallery.png" alt=""></i>
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
                             <!-- products img  -->
-                            <img src="img/products/trending/product8.jfif">
+                            <img src="../img/products/trending/product8.jfif">
                         </div>
                         <div class="product_details">
                             <div class="text" >
@@ -2371,9 +2407,9 @@
                 <div class="products_card_l">
                     <a href="">
                         <div class="product_img">
-                            <i><img src="img/icons/gallery.png" alt=""></i>
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
                             <!-- products img  -->
-                            <img src="img/products/womens fasion/exclusive product.jpg">
+                            <img src="../img/products/womens fasion/exclusive product.jpg">
                         </div>
                         <div class="product_details">
                             <div class="text" >
@@ -2399,7 +2435,7 @@
     <!-- footer with back to top -->
     <footer id="foot_top">
         <a href="#"><button style="background-color: var(--basecolor1); border: 0px solid; width: 50vw;"><img
-                    src="img/icons/backtotop.png" alt="" height="15px" width="15px"></button></a>
+                    src="../img/icons/backtotop.png" alt="" height="15px" width="15px"></button></a>
     </footer>
 
     <footer>
@@ -2518,6 +2554,26 @@
             autoslides[autoslideIndex - 1].style.display = "block";
             clr = setTimeout(autoshowSlides, 3000); // Change image every 3 seconds
         }
+        // -------------------------------
+
+    // //  for navigation box , NOT WORKING IN THE EXTERNAL BUT WORKING IN THE INTERNAL
+    //  var notificationClickNo = 1;
+    //  notification(notificationClickNo)
+
+    //  function openNotification(o){
+    //      notification(notificationClickNo += o)
+    //  }
+
+    //  function notification(o){
+    //     if(o%2==0){
+    //         document.getElementById("notification").style=" transform: translateY(0%);"
+    //     }
+    //     else{
+    //         document.getElementById("notification").style="transform: translateY(-100%) "
+    //     }
+    //  }
+    // //  <<---------------------------------------->
+
     </script>
 </body>
 

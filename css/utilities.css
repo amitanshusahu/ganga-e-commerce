@@ -107,7 +107,46 @@ hr{
     padding-bottom: 20px;
 }
 
-
+/* notificaltion box  */
+.notif_container{
+    position: fixed;
+    z-index: 999;
+    margin-top: 68px;
+    right: 0%;
+    background-color: rgba(82, 163, 255, 0.466);
+    backdrop-filter: blur(5px);
+    border: 2px solid var(--bordercolor);
+    border-radius: 5px;
+    width: 30vw;
+    transform: translateY(-150%);
+    transition: 0.2s ease-in-out;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70%;
+}
+.notif_container::-webkit-scrollbar{
+    width: 0px;
+    background-color: rgba(255, 255, 255, 0);
+}
+.notif_container .notif_heading{
+    padding: 10px;
+}
+.notif_container .notif_content{
+    line-height: 25px;
+    list-style: none;
+    display: block;
+}
+.notif_container .notif_content li{
+    border: 1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 2px;
+}
+.notif_container .notif_content li:hover{
+    background-color: rgba(255, 255, 255, 0.877);
+}
 
 /* navigation */
 #NavHolder{
@@ -172,11 +211,11 @@ hr{
 
 /* below nvigation */
 #BelowNavHolder{
-    margin-top: 50px;
+    margin-top: 70px;
     height: 40px;
     background-color: white;
     position: fixed;
-    z-index: 10000;
+    z-index: 900;
     width: 100%;
 }
 #BelowNavHolder nav{
@@ -238,7 +277,7 @@ hr{
     display: block;
 }
 
-/* horizontal */
+/* horizontal menu */
 .dropdown ul{
     list-style: none;
     margin-top: 1%;
@@ -276,6 +315,34 @@ hr{
 }
 /* ---------------------------------------------------------------- */
 
+/* footer */
+footer{
+    background-color:white;
+    margin-top: -70px;
+}
+#foot_top{
+    position: absolute;
+    background-color: var(--basecolor1);
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+.info_foot{
+    height: 150px;
+    width: 100%!important;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.info_foot ul{
+    display: inline;
+    list-style: none;
+}
+.disclaimer_foot{
+    text-align: center;
+}
+/* ......................................... */
+
 /* for screen size below 700px */
 @media all and (max-width: 700px) {
     #logo{
@@ -298,6 +365,9 @@ hr{
     }
     .menu ul ul{
         width: 40vw;
+    }
+    footer{
+        margin-top: 0px;
     }
 }
 

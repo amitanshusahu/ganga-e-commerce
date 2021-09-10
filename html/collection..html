@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/collectionstyle.css">
+    <script src="../js/utilities.js"></script>
+    <title>Ganga - Collection</title>
+</head>
+
+<body>
+    <!-- LogIn modal -->
+    <form action="" class="login" id="loginform">
+        <div class="login_container"></div>
+        <div class="avtar">
+            <img src="../img/icons/gangalogo.png" alt="Ganga user avtar">
+            <h2>Log In</h2>
+        </div>
+        <div class="login_content">
+            <b style="margin-left:30vw;" onclick="closelogin()"> <img src="../img/icons/close.png" alt="X"></b>
+            <ul><input type="text" name="username" placeholder="Email / Phone Number *" required></ul>
+            <ul><input type="password" name="pws" placeholder="Password *" required></ul>
+            <p style="padding-left: 10px;"><input type="checkbox" name="remember_me" checked>Remember Me</p>
+            <ul class="login_btn_holder"><button id="login_btn">Log In</button></ul>
+        </div>
+        <div class="login_foot">
+            <a href="">Forgot Password?</a>
+            <p>New User?</p>
+            <a href="">Sign Up</a>
+        </div>
+        </div>
+    </form>
+
+    <!-- Notification Modal -->
+    <div class="notif_container" id="notification">
+        <div class="notif_heading">
+            <h2>Notification</h2>
+        </div>
+        <div class="notif_content">
+            <li>This is a Notification</li>
+            <li>Your order has been placed</li>
+            <li>You will get your order after two years</li>
+            <li>A killer is trying to kill you</li>
+            <li>Die before i die</li>
+            <li>Do or die and then forget everything</li>
+            <li>why should you not do that</li>
+            <li>Be what everyone want you to be like Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                deserunt eos dolores! Praesentium eos, aliquid facere veniam velit amet aspernatur.</li>
+        </div>
+        <script>
+            //  for navigation box , NOT WORKING IN THE EXTERNAL BUT WORKING IN THE INTERNAL
+            var notificationClickNo = 1;
+            notification(notificationClickNo)
+
+            function openNotification(o) {
+                notification(notificationClickNo += o)
+            }
+
+            function notification(o) {
+                if (o % 2 == 0) {
+                    document.getElementById("notification").style = " transform: translateY(0%);"
+                }
+                else {
+                    document.getElementById("notification").style = "transform: translateY(-100%) "
+                }
+            }
+    //  <<---------------------------------------->
+        </script>
+    </div>
+
+    <!-- Show all collection Modal -->
+    <div id="collection_modal">
+        <div class="collection_close" >
+            <img id="closeCollection" onclick="CloseCollection()" src="../img/icons/close.png" alt="">
+        </div>
+    </div>
+
+    <!-- navigation top -->
+    <div id="NavHolder">
+        <nav>
+
+            <i id="LogoHolder">
+                <!--logo-->
+                <a href="../html/index.html" ><img id="logo" src="../img/icons/gangalogo.png" alt=""></a>
+            </i>
+            <i id="SearchHolder">
+                <input id="search" type="text" placeholder="Search">
+                <img src="https://img.icons8.com/ios-glyphs/24/000000/search--v1.png" />
+            </i>
+
+            <ul>
+                <li><a onclick="loginnow(1)" style="cursor: pointer;"><img src="../img/icons/avtar.png"></a></li>
+                <!--login-->
+                <li><a onclick="openNotification(1)" style="cursor: pointer;"><img src="../img/icons/bell.png" /></a>
+                </li>
+                <!--notification-->
+                <li><a href="../html/collection..html"><img src="../img/icons/gallery.png" /></a></li>
+                <!--collection-->
+                <li><a href=""><img src="../img/icons/fast-cart.png" /></a></li>
+                <!--cart-->
+            </ul>
+        </nav>
+    </div>
+    <!-- ---------------------------------------------------------- -->
+    <!-- <div>space</div> -->
+
+
+    <!-- the main contain goes here -->
+    <main class="mainContent">
+        <div class="yourCollection">
+            <h2>Your Collection</h2>
+        </div>
+
+        <!------ Collection Content Box large  Horozontal--------->
+        <div class="content_box_collection">
+
+            <!-- heading of the content box  -->
+            <div class="heading">
+                <h2>Recent</h2>
+            </div>
+            
+            <div id="copy_collection"> 
+            <div class="viewLimit">
+                <!-- ------------product card large 1 -------------->
+                <div class="products_card_l">
+                    <a href="">
+                        <div class="product_img">
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
+                            <!-- product img                             -->
+                            <img src="../img/products/trending/Product1.jfif">
+                        </div>
+                        <div class="product_details">
+                            <div class="text">
+                                <p>Gold plated watch for men - Titan | best Quality 24k gold</p>
+                            </div>
+                            <div class="price">
+                                <p>Rs 2783/-</p>
+                            </div>
+                            <div class="rating">
+                                <i>******</i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------product card large END ------------>
+
+                <!-- ------------product card large 2 -------------->
+                <div class="products_card_l">
+                    <a href="">
+                        <div class="product_img">
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
+                            <!-- product img -->
+                            <img src="../img/products/trending/product2.jpg">
+                        </div>
+                        <div class="product_details">
+                            <div class="text">
+                                <p>Leather shoes for men- Sports shoes premium, Spikestar</p>
+                            </div>
+                            <div class="price">
+                                <p>Rs 999/-</p>
+                            </div>
+                            <div class="rating">
+                                <i>******</i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------product card large END ------------>
+
+                <!-- ------------product card large 3 -------------->
+                <div class="products_card_l">
+                    <a href="">
+                        <div class="product_img">
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
+                            <!-- product img -->
+                            <img src="../img/products/trending/product3.jpg">
+                        </div>
+                        <div class="product_details">
+                            <div class="text">
+                                <p>Premium plasticc shoes for men , kids - Nike star</p>
+                            </div>
+                            <div class="price">
+                                <p>Rs 783/-</p>
+                            </div>
+                            <div class="rating">
+                                <i>******</i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------product card large END ------------>
+
+                <!-- ------------product card large 1 -------------->
+                <div class="products_card_l">
+                    <a href="">
+                        <div class="product_img">
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
+                            <!-- product image -->
+                            <img src="../img/products/trending/product 4.jfif">
+                        </div>
+                        <div class="product_details">
+                            <div class="text">
+                                <p>Cheap pillow covers in extreme price. for kids and gods</p>
+                            </div>
+                            <div class="price">
+                                <p>Rs 273/-</p>
+                            </div>
+                            <div class="rating">
+                                <i>******</i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------product card large END ------------>
+
+                <!-- ------------product card large 1 -------------->
+                <div class="products_card_l">
+                    <a href="">
+                        <div class="product_img">
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
+                            <!-- products imag -->
+                            <img src="../img/products/trending/product5.jfif">
+                        </div>
+                        <div class="product_details">
+                            <div class="text">
+                                <p>hand woven cloths for men most premium and the Best</p>
+                            </div>
+                            <div class="price">
+                                <p>Rs 2783/-</p>
+                            </div>
+                            <div class="rating">
+                                <i>******</i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------product card large END ------------>
+
+                <!-- ------------product card large 1 -------------->
+                <div class="products_card_l">
+                    <a href="">
+                        <div class="product_img">
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
+                            <!-- products img -->
+                            <img src="../img/products/trending/product5.jpeg">
+                        </div>
+                        <div class="product_details">
+                            <div class="text">
+                                <p>hand woven cloths for men most premium and the Best</p>
+                            </div>
+                            <div class="price">
+                                <p>Rs 2783/-</p>
+                            </div>
+                            <div class="rating">
+                                <i>******</i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------product card large END ------------>
+
+                <!-- ------------product card large 1 -------------->
+                <div class="products_card_l">
+                    <a href="">
+                        <div class="product_img">
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
+                            <!-- products img  -->
+                            <img src="../img/products/trending/product6.jfif">
+                        </div>
+                        <div class="product_details">
+                            <div class="text">
+                                <p>hand woven cloths for men most premium and the Best</p>
+                            </div>
+                            <div class="price">
+                                <p>Rs 2783/-</p>
+                            </div>
+                            <div class="rating">
+                                <i>******</i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------product card large END ------------>
+
+                <!-- ------------product card large 1 -------------->
+                <div class="products_card_l">
+                    <a href="">
+                        <div class="product_img">
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
+                            <!-- products img  -->
+                            <img src="../img/products/trending/product7.jfif">
+                        </div>
+                        <div class="product_details">
+                            <div class="text">
+                                <p>hand woven cloths for men most premium and the Best</p>
+                            </div>
+                            <div class="price">
+                                <p>Rs 2783/-</p>
+                            </div>
+                            <div class="rating">
+                                <i>******</i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------product card large END ------------>
+
+                <!-- ------------product card large 1 -------------->
+                <div class="products_card_l">
+                    <a href="">
+                        <div class="product_img">
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
+                            <!-- products img  -->
+                            <img src="../img/products/trending/product8.jfif">
+                        </div>
+                        <div class="product_details">
+                            <div class="text">
+                                <p>hand woven cloths for men most premium and the Best</p>
+                            </div>
+                            <div class="price">
+                                <p>Rs 2783/-</p>
+                            </div>
+                            <div class="rating">
+                                <i>******</i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------product card large END ------------>
+
+                <!-- ------------product card large 1 -------------->
+                <div class="products_card_l">
+                    <a href="">
+                        <div class="product_img">
+                            <i><img src="../img/icons/gallery.png" alt=""></i>
+                            <!-- products img  -->
+                            <img src="../img/products/womens fasion/exclusive product.jpg">
+                        </div>
+                        <div class="product_details">
+                            <div class="text">
+                                <p>hand woven cloths for men most premium and the Best</p>
+                            </div>
+                            <div class="price">
+                                <p>Rs 2783/-</p>
+                            </div>
+                            <div class="rating">
+                                <i>******</i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- ---------product card large END ------------>
+            </div>
+        </div>    
+
+            <button class="ShowCollection" id="btn">
+                <ul style="padding:6px;" >Show All</ul>
+            </button>
+        </div>  
+        <!-- ---------End of The Collection Box----------------- -->
+
+    </main>
+
+    <!-- footer with back to top -->
+    <footer id="foot_top">
+        <a href="#"><button style="background-color: var(--basecolor1); border: 0px solid; width: 50vw;"><img
+                    src="../img/icons/backtotop.png" alt="" height="15px" width="15px"></button></a>
+    </footer>
+
+    <footer>
+        <div class="info_foot">
+            <ul class="info">
+                <li>hi</li>
+                <li>this</li>
+                <li>that</li>
+                <li>those</li>
+                <li>all</li>
+            </ul>
+            <hr>
+            <ul class="info">
+                <li>hi</li>
+                <li>this</li>
+                <li>that</li>
+                <li>those</li>
+                <li>all</li>
+            </ul>
+            <hr>
+            <ul class="info">
+                <li>hi</li>
+                <li>this</li>
+                <li>that</li>
+                <li>those</li>
+                <li>all</li>
+            </ul>
+            <hr>
+            <ul class="info">
+                <li>hi</li>
+                <li>this</li>
+                <li>that</li>
+                <li>those</li>
+                <li>all</li>
+            </ul>
+        </div>
+        <div class="space" style="padding-top: 15px;"></div>
+        <hr>
+        <div class="disclaimer_foot">
+            <h1>Ganga</h1>
+            <P>thsi is it i have nothing to say about this thing becaude lorem ipsum is not working for some reason and
+                one day this thing will go to the balk hole of paris and then i will go the war of gods ft. Amitanshu
+                Sahu</P>
+        </div>
+    </footer>
+    
+    <script>
+        var ShowAll=document.getElementById("btn");
+        var collectionModal=document.getElementById("collection_modal");
+        var copyCollection = document.getElementById("copy_collection");
+        var cln = copyCollection.cloneNode(true);
+
+        ShowAll.addEventListener("click", function(){
+            collectionModal.style="height: 100%; width: 100%;";
+            collectionModal.appendChild(cln);
+        })
+
+        function CloseCollection() {
+            collectionModal.style="height: 0%; width: 0%;";
+        }
+    </script>
+</body>
+
+</html>
